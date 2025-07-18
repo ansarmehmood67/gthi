@@ -133,27 +133,39 @@ export default function TutelaImpresaLanding() {
             </h2>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Check className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
                 <span className="text-lg">Obblighi e responsabilità del Datore di Lavoro</span>
               </div>
               <div className="flex items-center gap-3">
-                <Check className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
                 <span className="text-lg">Normativa D.Lgs. 81/2008 e D.Lgs. 231/2001</span>
               </div>
               <div className="flex items-center gap-3">
-                <Check className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
                 <span className="text-lg">Gestione della sicurezza aziendale e organizzazione del lavoro</span>
               </div>
               <div className="flex items-center gap-3">
-                <Check className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
                 <span className="text-lg">Documentazione, sorveglianza sanitaria, gestione delle emergenze</span>
               </div>
               <div className="flex items-center gap-3">
-                <Check className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
                 <span className="text-lg">Ruoli e compiti di RSPP, RLS, medico competente, ASPP</span>
               </div>
               <div className="flex items-center gap-3">
-                <Check className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
                 <span className="text-lg">Comunicazione efficace, leadership, gestione dei conflitti</span>
               </div>
             </div>
@@ -163,8 +175,8 @@ export default function TutelaImpresaLanding() {
               </Button>
             </div>
           </div>
-          <div className="flex-shrink-0 ml-8">
-            <img src={lightbulbIcon} alt="Lightbulb" className="w-32 h-32 object-contain" />
+          <div className="flex justify-center ml-8">
+            <img src="/lovable-uploads/b122901f-d6a5-4853-87ae-7e9dd269c7c7.png" alt="Lightbulb" className="w-48 h-48 object-contain" />
           </div>
         </div>
       </section>
