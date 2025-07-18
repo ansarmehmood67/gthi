@@ -7,6 +7,8 @@ import lightbulbIcon from "@/assets/lightbulb-icon.png";
 import notebookIcon from "@/assets/notebook-icon.png";
 import instructorPhoto from "@/assets/instructor-photo.png";
 import tutelaImpresaLogo from "@/assets/tutelaimpresa-logo.png";
+import facebookBg from "@/assets/facebook-bg.jpg";
+import linkedinBg from "@/assets/linkedin-bg.jpg";
 
 export default function TutelaImpresaLanding() {
   return (
@@ -389,53 +391,169 @@ export default function TutelaImpresaLanding() {
       </section>
 
       {/* Social Media Section */}
-      <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-brand-red mb-4">
-            Resta sempre aggiornato
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Segui i nostri canali social per rimanere sempre informato su novità, aggiornamenti<br />
-            e contenuti esclusivi di Tutela Impresa.
-          </p>
-          <div className="flex justify-center gap-8 mb-12">
-            <div className="bg-blue-600 p-6 rounded-lg text-white text-center max-w-xs">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                  <span className="text-brand-red font-bold text-sm">F</span>
+      <section className="py-8 bg-white">
+        <div className="container mx-auto px-4">
+          {/* Section Header */}
+          <div className="text-center mb-6">
+            <h2 className="text-3xl lg:text-4xl font-black text-brand-red mb-2 mt-16">
+              Resta sempre aggiornato
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Segui i nostri canali social per rimanere sempre informato su novità, 
+              aggiornamenti e contenuti esclusivi di Tutela Impresa.
+            </p>
+          </div>
+
+          {/* Social Cards */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            <div
+              className="group relative h-36 bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
+              style={{
+                backgroundImage: `url(${facebookBg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+            >
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-40 transition-all duration-300"></div>
+
+              {/* Content */}
+              <div className="relative z-10 h-full flex flex-col justify-between p-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-16 h-16">
+                      <img
+                        src={ferrariLogo}
+                        alt="Ferrari Logo"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-bold text-white mb-0.5 leading-tight">Ferrari Service</h3>
+                      <p className="text-gray-200 text-xs mb-0.5 font-medium">Pagina ufficiale</p>
+                      <p className="text-gray-300 text-xs">1.8K seguaci</p>
+                    </div>
+                  </div>
+                  <div className="bg-white bg-opacity-90 backdrop-blur-sm px-2 py-1 rounded-full flex-shrink-0">
+                    <span className="text-xs font-semibold text-gray-800">Facebook</span>
+                  </div>
                 </div>
-                <span className="font-bold">Ferrari Service</span>
+
+                {/* CTA Button */}
+                <div className="flex justify-start">
+                  <a
+                    href="https://www.facebook.com/ferrariservice.it"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#1877F2] hover:bg-[#166FE5] text-white py-2 px-4 rounded-lg font-semibold text-xs inline-flex items-center space-x-1.5"
+                  >
+                    <span>Segui la Pagina</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <p className="text-sm mb-4">Pagina ufficiale<br />1.8k seguaci</p>
-              <Button variant="outline" size="sm" className="bg-blue-500 text-white border-white">
-                Segui la Pagina →
-              </Button>
             </div>
 
-            <div className="bg-pink-600 p-6 rounded-lg text-white text-center max-w-xs">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                  <span className="text-brand-red font-bold text-sm">F</span>
+            <div
+              className="group relative h-36 bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
+              style={{
+                backgroundImage: `url(${facebookBg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+            >
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-40 transition-all duration-300"></div>
+
+              {/* Content */}
+              <div className="relative z-10 h-full flex flex-col justify-between p-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-16 h-16">
+                      <img
+                        src={ferrariLogo}
+                        alt="Ferrari Logo"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-bold text-white mb-0.5 leading-tight">Ferrari Service</h3>
+                      <p className="text-gray-200 text-xs mb-0.5 font-medium">Profilo aziendale</p>
+                      <p className="text-gray-300 text-xs">196 follower</p>
+                    </div>
+                  </div>
+                  <div className="bg-white bg-opacity-90 backdrop-blur-sm px-2 py-1 rounded-full flex-shrink-0">
+                    <span className="text-xs font-semibold text-gray-800">Instagram</span>
+                  </div>
                 </div>
-                <span className="font-bold">Ferrari Service</span>
+
+                {/* CTA Button */}
+                <div className="flex justify-start">
+                  <a
+                    href="https://www.instagram.com/ferrariservice.it/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gradient-to-r from-[#E4405F] to-[#F56040] hover:from-[#D73552] hover:to-[#E55A3C] text-white py-2 px-4 rounded-lg font-semibold text-xs inline-flex items-center space-x-1.5"
+                  >
+                    <span>Segui su Instagram</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <p className="text-sm mb-4">Profilo aziendale<br />1.2k follower</p>
-              <Button variant="outline" size="sm" className="bg-pink-500 text-white border-white">
-                Segui su Instagram →
-              </Button>
             </div>
 
-            <div className="bg-blue-700 p-6 rounded-lg text-white text-center max-w-xs">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                  <span className="text-brand-red font-bold text-sm">F</span>
+            <div
+              className="group relative h-36 bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
+              style={{
+                backgroundImage: `url(${linkedinBg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+            >
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-40 transition-all duration-300"></div>
+
+              {/* Content */}
+              <div className="relative z-10 h-full flex flex-col justify-between p-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-16 h-16">
+                      <img
+                        src={ferrariLogo}
+                        alt="Ferrari Logo"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-bold text-white mb-0.5 leading-tight">Ferrari Service</h3>
+                      <p className="text-gray-200 text-xs mb-0.5 font-medium">Profilo aziendale</p>
+                      <p className="text-gray-300 text-xs">863 collegamenti</p>
+                    </div>
+                  </div>
+                  <div className="bg-white bg-opacity-90 backdrop-blur-sm px-2 py-1 rounded-full flex-shrink-0">
+                    <span className="text-xs font-semibold text-gray-800">LinkedIn</span>
+                  </div>
                 </div>
-                <span className="font-bold">Ferrari Service</span>
+
+                {/* CTA Button */}
+                <div className="flex justify-start">
+                  <a
+                    href="https://www.linkedin.com/company/ferrariservice"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#0A66C2] hover:bg-[#095296] text-white py-2 px-4 rounded-lg font-semibold text-xs inline-flex items-center space-x-1.5"
+                  >
+                    <span>Scopri su LinkedIn</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <p className="text-sm mb-4">Profilo aziendale<br />800 connections</p>
-              <Button variant="outline" size="sm" className="bg-blue-600 text-white border-white">
-                Segui su LinkedIn →
-              </Button>
             </div>
           </div>
         </div>
