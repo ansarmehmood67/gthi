@@ -77,8 +77,8 @@ export default function TutelaImpresaLanding() {
               all'Accordo Stato-Regioni del 6 febbraio 2025.
             </p>
           </div>
-          <div className="w-1/3 flex justify-end">
-            <img src="/lovable-uploads/f849dc78-5f27-41d0-aef9-ec7438be761c.png" alt="Warning" className="w-40 h-40 object-contain" />
+          <div className="w-1/3 flex justify-center pr-8">
+            <img src="/lovable-uploads/f849dc78-5f27-41d0-aef9-ec7438be761c.png" alt="Warning" className="w-48 h-48 object-contain" />
           </div>
         </div>
       </section>
