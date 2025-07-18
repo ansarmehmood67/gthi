@@ -52,6 +52,16 @@ const socialCards = [
     background: linkedinBg,
     buttonClass: 'bg-[#0A66C2] hover:bg-[#095296]',
     url: 'https://www.linkedin.com/company/ferrariservice'
+  },
+  {
+    platform: 'YouTube',
+    title: 'Ferrari Service',
+    subtitle: 'Canale ufficiale',
+    description: '2.1K iscritti',
+    buttonText: 'Iscriviti al Canale',
+    background: 'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=800&h=600&fit=crop',
+    buttonClass: 'bg-[#FF0000] hover:bg-[#CC0000]',
+    url: 'https://www.youtube.com/@ferrariservice'
   }
 ];
 
@@ -78,7 +88,7 @@ export default function SocialMediaSection() {
 
         {/* Social Cards */}
         <motion.div 
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6"
           variants={staggerContainer}
         >
           {socialCards.map((card, index) => (
