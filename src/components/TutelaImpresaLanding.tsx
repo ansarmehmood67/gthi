@@ -46,7 +46,7 @@ export default function TutelaImpresaLanding() {
             </div>
           </div>
           <div className="flex-shrink-0 ml-8">
-            <img src={ferrariLogo} alt="Ferrari Service" className="w-48 h-48 object-contain" />
+            <img src="/lovable-uploads/641f76c0-8333-4ae7-ac21-a0340b93a500.png" alt="Course Image" className="w-48 h-48 object-contain" />
           </div>
         </div>
       </section>
