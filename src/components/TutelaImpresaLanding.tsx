@@ -12,11 +12,11 @@ export default function TutelaImpresaLanding() {
     <div className="min-h-screen bg-background">
       {/* Header Section */}
       <header className="bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-8 py-3 flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/lovable-uploads/c69ce02a-dd9f-457d-90bd-1793b4c8a0be.png" alt="TutelaImpresa Ferrari Service" className="h-10" />
+            <img src="/lovable-uploads/c69ce02a-dd9f-457d-90bd-1793b4c8a0be.png" alt="TutelaImpresa Ferrari Service" className="h-12" />
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-4">
             <Button variant="whiteRedText" size="sm">
               SCARICA LA SCHEDA INFORMATIVA
             </Button>
@@ -28,15 +28,15 @@ export default function TutelaImpresaLanding() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-brand-red text-white py-24">
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <div className="flex-1 pr-8">
-            <h1 className="text-5xl font-bold mb-8 leading-tight">
+      <section className="bg-brand-red text-white py-20">
+        <div className="max-w-7xl mx-auto px-8 flex items-center">
+          <div className="w-2/3 pr-12">
+            <h1 className="text-6xl font-bold mb-10 leading-tight">
               100% ONLINE<br />
-              <span className="text-6xl">CORSO</span><br />
-              <span className="text-6xl">DATORI DI LAVORO</span>
+              <span className="text-7xl">CORSO</span><br />
+              <span className="text-7xl">DATORI DI LAVORO</span>
             </h1>
-            <div className="flex gap-4 mt-8">
+            <div className="flex gap-4 mt-10">
               <Button variant="whiteOutline" size="lg">
                 SCARICA LA SCHEDA INFORMATIVA
               </Button>
@@ -45,8 +45,8 @@ export default function TutelaImpresaLanding() {
               </Button>
             </div>
           </div>
-          <div className="flex-shrink-0 ml-8">
-            <img src="/lovable-uploads/641f76c0-8333-4ae7-ac21-a0340b93a500.png" alt="Course Image" className="w-48 h-48 object-contain" />
+          <div className="w-1/3 flex justify-end">
+            <img src="/lovable-uploads/641f76c0-8333-4ae7-ac21-a0340b93a500.png" alt="Ferrari Logo" className="w-56 h-56 object-contain" />
           </div>
         </div>
       </section>
