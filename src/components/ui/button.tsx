@@ -21,6 +21,8 @@ const buttonVariants = cva(
         red: "bg-brand-red text-white hover:bg-brand-red/90 border-2 border-white",
         yellow: "bg-brand-yellow text-gray-900 hover:bg-brand-yellow/90 font-bold",
         redOutline: "bg-white text-brand-red hover:bg-gray-50 border-2 border-brand-red",
+        whiteRedText: "bg-white text-brand-red hover:bg-gray-50 font-bold",
+        whiteOutline: "bg-transparent text-white hover:bg-white/10 border-2 border-white font-bold",
       },
       size: {
         default: "h-12 px-6 py-3",

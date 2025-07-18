@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, Facebook, Instagram, Linkedin, Play } from "lucide-react";
+import tutelaimpresaLogo from "@/assets/tutelaimpresa-logo.png";
 import ferrariLogo from "@/assets/ferrari-logo.png";
 import warningIcon from "@/assets/warning-icon.png";
 import lightbulbIcon from "@/assets/lightbulb-icon.png";
@@ -10,16 +11,13 @@ export default function TutelaImpresaLanding() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header Section */}
-      <header className="bg-brand-red text-white">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-white rounded-sm flex items-center justify-center">
-              <span className="text-brand-red font-bold text-sm">T</span>
-            </div>
-            <span className="font-bold text-xl">TUTELA IMPRESA</span>
+      <header className="bg-white">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="flex items-center">
+            <img src={tutelaimpresaLogo} alt="TutelaImpresa Ferrari Service" className="h-10" />
           </div>
-          <div className="flex gap-4">
-            <Button variant="redOutline" size="sm">
+          <div className="flex gap-3">
+            <Button variant="whiteRedText" size="sm">
               SCARICA LA SCHEDA INFORMATIVA
             </Button>
             <Button variant="yellow" size="sm">
@@ -30,16 +28,16 @@ export default function TutelaImpresaLanding() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-brand-red text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-          <div className="flex-1">
-            <h1 className="text-6xl font-bold mb-4 leading-tight">
+      <section className="bg-brand-red text-white py-24">
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+          <div className="flex-1 pr-8">
+            <h1 className="text-5xl font-bold mb-8 leading-tight">
               100% ONLINE<br />
-              <span className="text-7xl">CORSO</span><br />
-              <span className="text-7xl">DATORI DI LAVORO</span>
+              <span className="text-6xl">CORSO</span><br />
+              <span className="text-6xl">DATORI DI LAVORO</span>
             </h1>
             <div className="flex gap-4 mt-8">
-              <Button variant="redOutline" size="lg">
+              <Button variant="whiteOutline" size="lg">
                 SCARICA LA SCHEDA INFORMATIVA
               </Button>
               <Button variant="yellow" size="lg">
@@ -47,8 +45,8 @@ export default function TutelaImpresaLanding() {
               </Button>
             </div>
           </div>
-          <div className="flex-shrink-0">
-            <img src={ferrariLogo} alt="Ferrari Service" className="w-40 h-40 object-contain" />
+          <div className="flex-shrink-0 ml-8">
+            <img src={ferrariLogo} alt="Ferrari Service" className="w-48 h-48 object-contain" />
           </div>
         </div>
       </section>
