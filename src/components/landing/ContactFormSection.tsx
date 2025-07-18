@@ -18,7 +18,7 @@ export default function ContactFormSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Side - Content */}
           <motion.div
-            className="text-left"
+            className="text-center lg:text-left"
             variants={fadeInLeft}
             initial="hidden"
             whileInView="visible"
@@ -29,7 +29,7 @@ export default function ContactFormSection() {
                 💬 Contattaci Ora
               </Button>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
               Pronto per<br />
               trasformare<br />
               la tua azienda?

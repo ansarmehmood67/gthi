@@ -30,7 +30,7 @@ const staggerContainer = {
 export default function MandatorySection() {
   return (
     <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-16 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center text-center lg:text-left">
         <motion.div 
           variants={fadeInLeft}
           initial="hidden"

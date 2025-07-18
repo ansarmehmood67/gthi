@@ -52,7 +52,8 @@ export default function ELearningSection() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-start justify-between">
+      <div className="relative max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-start justify-center lg:justify-between text-center lg:text-left">
+
         <motion.div 
           variants={fadeInLeft}
           initial="hidden"
@@ -61,7 +62,7 @@ export default function ELearningSection() {
           className="w-full lg:flex-1 mb-8 lg:mb-0"
         >
           <motion.h2 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 leading-tight"
+            className="text-5xl md:text-6xl lg:text-6xl font-bold mb-6 md:mb-8 leading-tight"
             variants={fadeInUp}
           >
             MODALITÀ<br />

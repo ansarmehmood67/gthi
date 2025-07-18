@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ferrariLogo from "@/assets/ferrari-logo.png";
+import ferrariLogo from "@/assets/ferrari-logo2.svg";
 import facebookBg from "@/assets/facebook-bg.jpg";
 import linkedinBg from "@/assets/linkedin-bg.jpg";
 
@@ -57,7 +57,7 @@ const socialCards = [
     platform: 'YouTube',
     title: 'Ferrari Service',
     subtitle: 'Canale ufficiale',
-    description: '2.1K iscritti',
+    description: '1.01k iscritti',
     buttonText: 'Iscriviti al Canale',
     background: 'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=800&h=600&fit=crop',
     buttonClass: 'bg-[#FF0000] hover:bg-[#CC0000]',

@@ -51,7 +51,7 @@ export default function CourseDetailsSection() {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl"></div>
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between">
+      <div className="relative max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center justify-center lg:justify-between text-center lg:text-left">
         <motion.div 
           variants={fadeInLeft}
           initial="hidden"

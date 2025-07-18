@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import Logo from "@/assets/tutelalogo.svg";
 
 interface HeaderProps {
   isScrolled: boolean;
@@ -23,7 +24,7 @@ export default function Header({ isScrolled }: HeaderProps) {
           className="flex items-center"
         >
           <img 
-            src="/lovable-uploads/c69ce02a-dd9f-457d-90bd-1793b4c8a0be.png" 
+            src={Logo} 
             alt="TutelaImpresa Ferrari Service" 
             className="h-12 md:h-16 object-contain"
           />

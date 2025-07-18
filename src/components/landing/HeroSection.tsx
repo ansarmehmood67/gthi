@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import FerrariLogo from "@/assets/ferrari-logo.svg";
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -60 },
@@ -35,7 +36,7 @@ export default function HeroSection() {
           className="w-full lg:w-2/3 lg:pr-12 text-center lg:text-left mb-8 lg:mb-0"
         >
           <motion.h1 
-            className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-10 leading-tight text-white"
+            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-10 leading-tight text-white"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -90,7 +91,7 @@ export default function HeroSection() {
           className="w-full lg:w-1/3 flex justify-center lg:justify-start lg:pl-16"
         >
           <motion.img 
-            src="/lovable-uploads/641f76c0-8333-4ae7-ac21-a0340b93a500.png" 
+            src={FerrariLogo}
             alt="Ferrari Logo" 
             className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 object-contain"
             whileHover={{ scale: 1.1, rotate: 5 }}
