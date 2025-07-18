@@ -6,6 +6,7 @@ import warningIcon from "@/assets/warning-icon.png";
 import lightbulbIcon from "@/assets/lightbulb-icon.png";
 import notebookIcon from "@/assets/notebook-icon.png";
 import instructorPhoto from "@/assets/instructor-photo.png";
+import tutelaImpresaLogo from "@/assets/tutelaimpresa-logo.png";
 
 export default function TutelaImpresaLanding() {
   return (
@@ -248,7 +249,7 @@ export default function TutelaImpresaLanding() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {/* Suggested Price */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
               <h3 className="text-4xl font-bold text-gray-900 mb-2">€250,00</h3>
               <p className="text-sm text-gray-600 mb-4">IVA ESCLUSA</p>
               <p className="text-brand-red font-bold text-lg">
@@ -258,15 +259,14 @@ export default function TutelaImpresaLanding() {
             </div>
 
             {/* Ferrari Service Price */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
               <h3 className="text-4xl font-bold text-gray-900 mb-2">€149,00</h3>
               <p className="text-sm text-gray-600 mb-4">IVA ESCLUSA</p>
-              <p className="text-lg font-bold mb-4">CLIENTI</p>
-              <div className="flex items-center justify-center gap-2 mb-6">
-                <span className="text-sm">🏎️</span>
-                <span className="text-sm font-bold">FERRARI SERVICE</span>
+              <p className="text-brand-red font-bold text-lg mb-4">CLIENTI</p>
+              <div className="flex items-center justify-center mb-6">
+                <img src={tutelaImpresaLogo} alt="Tutela Impresa" className="h-8" />
               </div>
-              <Button variant="red" size="lg" className="w-full">
+              <Button variant="red" size="lg" className="w-full rounded-full">
                 ACQUISTA ORA
               </Button>
             </div>
@@ -275,9 +275,9 @@ export default function TutelaImpresaLanding() {
             <div className="bg-brand-red p-8 rounded-lg shadow-lg text-white">
               <h3 className="text-4xl font-bold mb-2">€99,00</h3>
               <p className="text-sm mb-4">IVA ESCLUSA</p>
-              <p className="text-lg font-bold mb-2">CLIENTI</p>
-              <p className="text-xl font-bold mb-6">TUTELA IMPRESA 100%</p>
-              <Button variant="yellow" size="lg" className="w-full">
+              <p className="text-white font-bold text-lg mb-2">CLIENTI</p>
+              <p className="text-white font-bold text-xl mb-6">TUTELA IMPRESA 100%</p>
+              <Button variant="outline" size="lg" className="w-full bg-white text-brand-red border-white hover:bg-gray-100 rounded-full font-bold">
                 ACQUISTA ORA
               </Button>
             </div>
