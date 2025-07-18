@@ -35,21 +35,17 @@ export default function HeroSection() {
           className="w-full lg:w-2/3 lg:pr-12 text-center lg:text-left mb-8 lg:mb-0"
         >
           <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-montserrat font-bold mb-6 md:mb-10 leading-tight text-white"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-10 leading-tight text-white"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            <span className="font-montserrat font-medium text-3xl md:text-4xl lg:text-5xl">TUTELA IMPRESA</span> 
-            <span className="font-montserrat font-black text-brand-yellow">100%</span><br />
-            <span className="text-5xl md:text-7xl lg:text-8xl font-black text-white">
-              SICUREZZA
+            100% ONLINE<br />
+            <span className="text-5xl md:text-7xl lg:text-8xl text-white">
+              CORSO
             </span><br />
-            <span className="text-5xl md:text-7xl lg:text-8xl font-black text-white">
-              AZIENDALE
-            </span><br />
-            <span className="font-inter font-medium text-lg md:text-xl lg:text-2xl text-brand-yellow mt-2 block">
-              sempre sotto controllo
+            <span className="text-5xl md:text-7xl lg:text-8xl text-white">
+              DATORI DI LAVORO
             </span>
           </motion.h1>
           <motion.div 
