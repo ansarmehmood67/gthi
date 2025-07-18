@@ -25,20 +25,29 @@ export default function TutelaImpresaLanding() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Animation variants
+  // Animation variants - smoother animations
   const fadeInUp = {
     hidden: { opacity: 0, y: 60 },
-    visible: { opacity: 1, y: 0 }
+    visible: { 
+      opacity: 1, 
+      y: 0
+    }
   };
 
   const fadeInLeft = {
     hidden: { opacity: 0, x: -60 },
-    visible: { opacity: 1, x: 0 }
+    visible: { 
+      opacity: 1, 
+      x: 0
+    }
   };
 
   const fadeInRight = {
     hidden: { opacity: 0, x: 60 },
-    visible: { opacity: 1, x: 0 }
+    visible: { 
+      opacity: 1, 
+      x: 0
+    }
   };
 
   const staggerContainer = {
@@ -46,8 +55,19 @@ export default function TutelaImpresaLanding() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.3,
         delayChildren: 0.2
+      }
+    }
+  };
+
+  const mobileStaggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.4,
+        delayChildren: 0.1
       }
     }
   };
@@ -73,16 +93,13 @@ export default function TutelaImpresaLanding() {
             <img 
               src="/lovable-uploads/c69ce02a-dd9f-457d-90bd-1793b4c8a0be.png" 
               alt="TutelaImpresa Ferrari Service" 
-              className="h-10 md:h-12 object-contain"
+              className="h-12 md:h-16 object-contain"
             />
           </motion.div>
-          <div className="flex gap-2 md:gap-4">
+          <div className="hidden md:flex gap-4">
             <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="whiteRedText" size="sm" className="hidden md:block">
+              <Button variant="whiteRedText" size="sm">
                 SCARICA LA SCHEDA INFORMATIVA
-              </Button>
-              <Button variant="whiteRedText" size="sm" className="md:hidden text-xs px-2">
-                SCHEDA INFO
               </Button>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
@@ -91,11 +108,20 @@ export default function TutelaImpresaLanding() {
               </Button>
             </motion.div>
           </div>
+          
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button variant="yellow" size="sm" className="text-xs px-3">
+                ACQUISTA
+              </Button>
+            </motion.div>
+          </div>
         </div>
       </motion.header>
 
       {/* Enhanced Hero Section */}
-      <section className="bg-brand-red text-white py-20 md:py-32 mt-16 overflow-hidden relative">
+      <section className="bg-brand-red text-white py-16 md:py-24 mt-16 overflow-hidden relative">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-red via-brand-red to-red-700"></div>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -107,19 +133,20 @@ export default function TutelaImpresaLanding() {
             variants={fadeInLeft}
             initial="hidden"
             animate="visible"
+            transition={{ duration: 1, ease: "easeOut" }}
             className="w-full lg:w-2/3 lg:pr-12 text-center lg:text-left mb-8 lg:mb-0"
           >
             <motion.h1 
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-10 leading-tight"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-10 leading-tight text-white"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 1, delay: 0.3 }}
             >
               100% ONLINE<br />
-              <span className="text-5xl md:text-7xl lg:text-8xl bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
+              <span className="text-5xl md:text-7xl lg:text-8xl text-white">
                 CORSO
               </span><br />
-              <span className="text-5xl md:text-7xl lg:text-8xl bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
+              <span className="text-5xl md:text-7xl lg:text-8xl text-white">
                 DATORI DI LAVORO
               </span>
             </motion.h1>
@@ -161,7 +188,8 @@ export default function TutelaImpresaLanding() {
             variants={fadeInRight}
             initial="hidden"
             animate="visible"
-            className="w-full lg:w-1/3 flex justify-center lg:justify-start lg:pl-8"
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="w-full lg:w-1/3 flex justify-center lg:justify-start lg:pl-16"
           >
             <motion.img 
               src="/lovable-uploads/641f76c0-8333-4ae7-ac21-a0340b93a500.png" 
@@ -182,18 +210,19 @@ export default function TutelaImpresaLanding() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1, ease: "easeOut" }}
             className="w-full lg:w-2/3 lg:pr-12 mb-8 lg:mb-0 order-2 lg:order-1"
           >
             <div className="space-y-6">
               <motion.h2 
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
-                variants={fadeInUp}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               >
                 OBBLIGATORIO DAL 2025
               </motion.h2>
               <motion.p 
                 className="text-xl md:text-2xl text-brand-red font-bold"
-                variants={fadeInUp}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
               >
                 CONFORME AL NUOVO ACCORDO STATO-REGIONI
               </motion.p>
@@ -204,19 +233,44 @@ export default function TutelaImpresaLanding() {
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <motion.p variants={fadeInUp}>
+                <motion.p 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  viewport={{ once: true }}
+                >
                   Il nuovo corso da 16 ore per Datori di Lavoro è obbligatorio dal 2025
                 </motion.p>
-                <motion.p variants={fadeInUp}>
+                <motion.p 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
                   <strong>per tutte le aziende,</strong>
                 </motion.p>
-                <motion.p variants={fadeInUp}>
+                <motion.p 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  viewport={{ once: true }}
+                >
                   anche se hai un RSPP esterno.
                 </motion.p>
-                <motion.p variants={fadeInUp}>
+                <motion.p 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  viewport={{ once: true }}
+                >
                   Il corso è <strong>100% online, tracciato e conforme</strong>
                 </motion.p>
-                <motion.p variants={fadeInUp}>
+                <motion.p 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
                   all'Accordo Stato-Regioni del 6 febbraio 2025.
                 </motion.p>
               </motion.div>
@@ -549,7 +603,7 @@ export default function TutelaImpresaLanding() {
           
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16"
-            variants={staggerContainer}
+            variants={mobileStaggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
