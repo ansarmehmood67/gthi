@@ -53,8 +53,8 @@ export default function TutelaImpresaLanding() {
 
       {/* Mandatory Section */}
       <section className="bg-gray-100 py-16">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-          <div className="flex-1">
+        <div className="max-w-7xl mx-auto px-8 flex items-center">
+          <div className="w-2/3 pr-12">
             <h2 className="text-5xl font-bold text-gray-900 mb-4">
               OBBLIGATORIO DAL 2025
             </h2>
@@ -77,8 +77,8 @@ export default function TutelaImpresaLanding() {
               all'Accordo Stato-Regioni del 6 febbraio 2025.
             </p>
           </div>
-          <div className="flex-shrink-0 ml-8">
-            <img src={warningIcon} alt="Warning" className="w-32 h-32 object-contain" />
+          <div className="w-1/3 flex justify-end">
+            <img src="/lovable-uploads/f849dc78-5f27-41d0-aef9-ec7438be761c.png" alt="Warning" className="w-40 h-40 object-contain" />
           </div>
         </div>
       </section>
