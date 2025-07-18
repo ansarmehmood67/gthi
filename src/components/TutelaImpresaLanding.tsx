@@ -188,21 +188,14 @@ export default function TutelaImpresaLanding() {
             GUARDA IL VIDEO
           </h2>
           <div className="relative max-w-4xl mx-auto mb-8">
-            <div className="bg-brand-red rounded-lg overflow-hidden relative aspect-video">
-              <img 
-                src={instructorPhoto} 
-                alt="Instructor" 
-                className="w-full h-full object-cover"
+            <div className="rounded-lg overflow-hidden relative aspect-video">
+              <iframe 
+                src="https://www.youtube.com/embed/WVg5d0aobcs?si=waM49fSSQducyC4P"
+                title="Corso Datori di Lavoro Video" 
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                <Play className="w-20 h-20 text-white" />
-              </div>
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <h3 className="text-3xl font-bold mb-2">DAL 2025</h3>
-                <h4 className="text-2xl font-bold mb-2">IL CORSO È ⚠️ OBBLIGATORIO</h4>
-                <p className="text-xl">DATORE DI LAVORO?</p>
-                <p className="text-yellow-400 text-xl font-bold">ECCO COSA DEVI FARE</p>
-              </div>
             </div>
           </div>
         </div>
