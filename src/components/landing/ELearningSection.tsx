@@ -25,6 +25,25 @@ const fadeInUp = {
   }
 };
 
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+      delayChildren: 0.3
+    }
+  }
+};
+
+const staggerItem = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { 
+    opacity: 1, 
+    y: 0
+  }
+};
+
 export default function ELearningSection() {
   return (
     <section className="bg-gradient-to-br from-brand-red via-brand-red to-red-700 text-white py-16 md:py-24 relative overflow-hidden">
@@ -50,11 +69,29 @@ export default function ELearningSection() {
           </motion.h2>
           <motion.div 
             className="text-brand-yellow text-xl md:text-2xl lg:text-3xl font-bold mb-6 md:mb-8 leading-relaxed"
-            variants={fadeInUp}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
           >
-            FREQUENTI QUANDO PUOI<br />
-            SUPERI L'ESAME<br />
-            SCARICHI L'ATTESTATO
+            <motion.div 
+              variants={staggerItem}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              FREQUENTI QUANDO PUOI
+            </motion.div>
+            <motion.div 
+              variants={staggerItem}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              SUPERI L'ESAME
+            </motion.div>
+            <motion.div 
+              variants={staggerItem}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              SCARICHI L'ATTESTATO
+            </motion.div>
           </motion.div>
         </motion.div>
         
