@@ -234,8 +234,8 @@ export default function TutelaImpresaLanding() {
               </Button>
             </div>
           </div>
-          <div className="flex-shrink-0 ml-8">
-            <img src={notebookIcon} alt="Notebook" className="w-32 h-32 object-contain" />
+          <div className="flex-shrink-0 ml-8 flex items-center justify-center">
+            <img src="/lovable-uploads/8887f665-040b-4d66-a143-76b8827f0444.png" alt="Calendar" className="w-48 h-48 object-contain" />
           </div>
         </div>
       </section>
