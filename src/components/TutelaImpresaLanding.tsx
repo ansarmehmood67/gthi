@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, Facebook, Instagram, Linkedin, Play } from "lucide-react";
-import tutelaimpresaLogo from "@/assets/tutelaimpresa-logo.png";
+
 import ferrariLogo from "@/assets/ferrari-logo.png";
 import warningIcon from "@/assets/warning-icon.png";
 import lightbulbIcon from "@/assets/lightbulb-icon.png";
@@ -14,7 +14,7 @@ export default function TutelaImpresaLanding() {
       <header className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <img src={tutelaimpresaLogo} alt="TutelaImpresa Ferrari Service" className="h-10" />
+            <img src="/lovable-uploads/c69ce02a-dd9f-457d-90bd-1793b4c8a0be.png" alt="TutelaImpresa Ferrari Service" className="h-10" />
           </div>
           <div className="flex gap-3">
             <Button variant="whiteRedText" size="sm">
