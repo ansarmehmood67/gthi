@@ -90,8 +90,8 @@ export default function HeroSection() {
           className="w-full lg:w-1/3 flex justify-center lg:justify-start lg:pl-16"
         >
           <motion.img 
-            src="/src/assets/hero-image.svg" 
-            alt="Hero Image" 
+            src="/lovable-uploads/641f76c0-8333-4ae7-ac21-a0340b93a500.png" 
+            alt="Ferrari Logo" 
             className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 object-contain"
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ duration: 0.3 }}
