@@ -69,7 +69,7 @@ export default function ELearningSection() {
             E-LEARNING
           </motion.h2>
           <motion.div 
-            className="text-brand-yellow text-2xl md:text-6xl lg:text-4xl font-extrabold mb-6 md:mb-8 "
+            className="text-brand-yellow text-3xl sm:text-4xl md:text-6xl lg:text-4xl font-extrabold mb-6 md:mb-8 "
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -108,7 +108,7 @@ export default function ELearningSection() {
             whileHover={{ scale: 1.02, y: -5 }}
             transition={{ duration: 0.3 }}
           >
-            <motion.p className="text-lg md:text-xl mb-4" variants={fadeInUp}>
+            <motion.p className="text-2xl sm:text-4xl md:text-2xl mb-4" variants={fadeInUp}>
               Il corso è interamente online<br />
               (e-learning asincrono), accessibile<br />
               24/7 da PC, tablet o smartphone.

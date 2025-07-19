@@ -47,13 +47,13 @@ export default function MandatorySection() {
               OBBLIGATORIO DAL 2025
             </motion.h2>
             <motion.p 
-              className="text-3xl md:text-3xl text-brand-red font-extrabold"
+              className="text-4xl md:text-3xl text-brand-red font-extrabold"
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
             >
               CONFORME AL NUOVO ACCORDO STATO-REGIONI
             </motion.p>
             <motion.div 
-              className="space-y-3 text-lg md:text-xl text-gray-900 font-DM-Sans"
+              className="space-y-3 text-lg md:text-xl text-gray-900 "
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"
