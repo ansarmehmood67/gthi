@@ -69,7 +69,7 @@ export default function ELearningSection() {
             E-LEARNING
           </motion.h2>
           <motion.div 
-            className="text-brand-yellow text-xl md:text-2xl lg:text-3xl font-bold mb-6 md:mb-8 leading-relaxed"
+            className="text-brand-yellow text-2xl md:text-6xl lg:text-4xl font-extrabold mb-6 md:mb-8 "
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"

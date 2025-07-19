@@ -41,19 +41,19 @@ export default function MandatorySection() {
         >
           <div className="space-y-6">
             <motion.h2 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight"
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               OBBLIGATORIO DAL 2025
             </motion.h2>
             <motion.p 
-              className="text-xl md:text-2xl text-brand-red font-bold"
+              className="text-3xl md:text-3xl text-brand-red font-extrabold"
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
             >
               CONFORME AL NUOVO ACCORDO STATO-REGIONI
             </motion.p>
             <motion.div 
-              className="space-y-3 text-lg md:text-xl text-gray-700"
+              className="space-y-3 text-lg md:text-xl text-gray-900"
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"
@@ -65,7 +65,7 @@ export default function MandatorySection() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                Il nuovo corso da 16 ore per Datori di Lavoro è obbligatorio dal 2025
+                Il Nuovo corso da 16 ore per Datori di Lavoro è obbligatorio dal 2025
               </motion.p>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}

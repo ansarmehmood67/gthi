@@ -38,9 +38,9 @@ const staggerContainer = {
 };
 
 const learningItems = [
-  "Obblighi e responsabilità del Datore di Lavoro",
-  "Normativa D.Lgs. 81/2008 e D.Lgs. 231/2001",
   "Gestione della sicurezza aziendale e organizzazione del lavoro",
+  "Normativa D.Lgs. 81/2008 e D.Lgs. 231/2001",
+  "Obblighi e responsabilità del Datore di Lavoro",
   "Documentazione, sorveglianza sanitaria, gestione delle emergenze",
   "Ruoli e compiti di RSPP, RLS, medico competente, ASPP",
   "Comunicazione efficace, leadership, gestione dei conflitti"
