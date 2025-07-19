@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import tutelaImpresaLogo from "@/assets/tutelaimpresa-logo.png";
+import tutelaImpresaLogo from "@/assets/tutelalogo.svg";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
