@@ -53,7 +53,7 @@ export default function MandatorySection() {
               CONFORME AL NUOVO ACCORDO STATO-REGIONI
             </motion.p>
             <motion.div 
-              className="space-y-3 text-lg md:text-xl text-gray-900"
+              className="space-y-3 text-lg md:text-xl text-gray-900 font-DM-Sans"
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"

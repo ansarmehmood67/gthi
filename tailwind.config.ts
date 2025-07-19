@@ -20,11 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'oswald': ['Oswald', 'sans-serif'],
-				'open-sans': ['Open Sans', 'sans-serif'],
-				'inter': ['Inter', 'sans-serif'],
-				'manrope': ['Manrope', 'sans-serif'],
-				'anrope': ['Anrope', 'sans-serif'],
-				'anton': ['Anton', 'sans-serif'],
+				'poppins': ['Poppins', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
