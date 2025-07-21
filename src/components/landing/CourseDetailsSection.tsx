@@ -102,7 +102,7 @@ export default function CourseDetailsSection() {
               className="mt-8"
               variants={fadeInUp}
             >
-              <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
+              <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }} >
                 <Button variant="redOutline" size="lg" className="hover:shadow-xl transition-all duration-300">
                   SCARICA LA SCHEDA INFORMATIVA
                 </Button>

@@ -108,11 +108,19 @@ export default function WhatYouLearnSection() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="red" size="lg" className="hover:shadow-xl hover:shadow-red-500/30 transition-all duration-300">
-                SCARICA LA SCHEDA INFORMATIVA
-              </Button>
-            </motion.div>
+            <motion.div
+  whileHover={{ scale: 1.05, y: -2 }}
+  whileTap={{ scale: 0.95 }}
+  className="flex justify-center md:justify-start w-full"
+>
+  <Button
+    variant="red"
+    size="lg"
+    className="hover:shadow-xl hover:shadow-red-500/30 transition-all duration-300"
+  >
+    SCARICA LA SCHEDA INFORMATIVA
+  </Button>
+</motion.div>
           </motion.div>
         </motion.div>
       </div>
