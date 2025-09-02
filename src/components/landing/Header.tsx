@@ -50,9 +50,11 @@ export default function Header({ isScrolled }: HeaderProps) {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <a href="https://tinyurl.com/FDDLNR" target="_blank" rel="noopener noreferrer">
             <Button variant="yellow" size="sm" className="text-xs px-3">
               ACQUISTA
             </Button>
+            </a>
           </motion.div>
         </div>
       </div>
