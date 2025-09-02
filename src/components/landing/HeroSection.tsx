@@ -75,6 +75,7 @@ export default function HeroSection() {
               whileTap={{ scale: 0.95 }}
               className="group"
             >
+              <a href="https://tinyurl.com/FDDLNR" target="_blank" rel="noopener noreferrer">
               <Button 
                 variant="yellow" 
                 size="lg" 
@@ -82,6 +83,8 @@ export default function HeroSection() {
               >
                 ACQUISTA ORA
               </Button>
+              </a>
+
             </motion.div>
           </motion.div>
         </motion.div>

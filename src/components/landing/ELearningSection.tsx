@@ -134,9 +134,11 @@ export default function ELearningSection() {
                 </a>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
+                <a href="https://tinyurl.com/FDDLNR" target="_blank" rel="noopener noreferrer">
                 <Button variant="yellow" size="lg" className="hover:shadow-xl hover:shadow-yellow-500/30 transition-all duration-300">
                   ACQUISTA ORA
                 </Button>
+                </a>
               </motion.div>
             </motion.div>
           </motion.div>
