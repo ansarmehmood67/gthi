@@ -60,6 +60,7 @@ export default function HeroSection() {
               whileTap={{ scale: 0.95 }}
               className="group"
             >
+              <a href="https://www.ferrariservice.it/wp-content/uploads/2025/09/100-ONLINE-CORSO-DATORI-DI-LAVORO.pdf" target="_blank" rel="noopener noreferrer">
               <Button 
                 variant="whiteOutline" 
                 size="lg" 
@@ -67,6 +68,7 @@ export default function HeroSection() {
               >
                 SCARICA LA SCHEDA INFORMATIVA
               </Button>
+              </a>
             </motion.div>
             <motion.div 
               whileHover={{ scale: 1.05, y: -3 }} 

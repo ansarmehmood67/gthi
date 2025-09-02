@@ -113,6 +113,7 @@ export default function WhatYouLearnSection() {
   whileTap={{ scale: 0.95 }}
   className="flex justify-center md:justify-start w-full"
 >
+  <a href="https://www.ferrariservice.it/wp-content/uploads/2025/09/100-ONLINE-CORSO-DATORI-DI-LAVORO.pdf" target="_blank" rel="noopener noreferrer">
   <Button
     variant="red"
     size="lg"
@@ -120,6 +121,7 @@ export default function WhatYouLearnSection() {
   >
     SCARICA LA SCHEDA INFORMATIVA
   </Button>
+  </a>
 </motion.div>
           </motion.div>
         </motion.div>

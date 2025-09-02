@@ -97,9 +97,11 @@ export default function PricingSection() {
                 />
               </div>
               <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-                <Button variant="red" size="lg" className="w-full rounded-full hover:shadow-xl hover:shadow-red-500/30 transition-all duration-300">
-                  ACQUISTA ORA
-                </Button>
+                <a href="https://tinyurl.com/FDDLNR" target="_blank" rel="noopener noreferrer">
+  <Button variant="red" size="lg" className="w-full rounded-full hover:shadow-xl hover:shadow-red-500/30 transition-all duration-300">
+    ACQUISTA ORA
+  </Button>
+</a>
               </motion.div>
             </div>
           </motion.div>
@@ -118,13 +120,15 @@ export default function PricingSection() {
               <p className="text-white font-bold text-lg mb-2">CLIENTI</p>
               <p className="text-white font-bold text-xl mb-6">TUTELA IMPRESA 100%</p>
               <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="w-full bg-white text-brand-red border-white hover:bg-gray-100 rounded-full font-bold hover:shadow-xl transition-all duration-300"
-                >
-                  ACQUISTA ORA
-                </Button>
+               <a href="https://tinyurl.com/FDDLTI" target="_blank" rel="noopener noreferrer">
+  <Button 
+    variant="outline" 
+    size="lg" 
+    className="w-full bg-white text-brand-red border-white hover:bg-gray-100 rounded-full font-bold hover:shadow-xl transition-all duration-300"
+  >
+    ACQUISTA ORA
+  </Button>
+</a>
               </motion.div>
             </div>
           </motion.div>

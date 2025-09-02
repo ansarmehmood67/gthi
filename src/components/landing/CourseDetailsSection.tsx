@@ -103,9 +103,11 @@ export default function CourseDetailsSection() {
               variants={fadeInUp}
             >
               <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }} >
+                <a href="https://www.ferrariservice.it/wp-content/uploads/2025/09/100-ONLINE-CORSO-DATORI-DI-LAVORO.pdf" target="_blank" rel="noopener noreferrer">
                 <Button variant="redOutline" size="lg" className="hover:shadow-xl transition-all duration-300">
                   SCARICA LA SCHEDA INFORMATIVA
                 </Button>
+                </a>
               </motion.div>
             </motion.div>
           </motion.div>
