@@ -75,7 +75,7 @@ export default function HeroSection() {
               whileTap={{ scale: 0.95 }}
               className="group"
             >
-              <a href="https://tinyurl.com/FDDLNR" target="_blank" rel="noopener noreferrer">
+              <a href="https://tinyurl.com/FDDLPO" target="_blank" rel="noopener noreferrer">
               <Button 
                 variant="yellow" 
                 size="lg" 

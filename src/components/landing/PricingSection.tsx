@@ -91,7 +91,7 @@ export default function PricingSection() {
           >
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
               <div className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg group-hover:shadow-xl transition-shadow">
-                ⭐ PIÙ POPOLARE
+                PIÙ POPOLARE
               </div>
             </div>
             <div className="absolute inset-0 bg-gradient-to-br from-red-100/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
@@ -100,7 +100,7 @@ export default function PricingSection() {
               <h3 className="text-4xl font-bold text-gray-900 mb-2 group-hover:text-red-700 transition-colors">€159,00</h3>
               <p className="text-sm text-gray-500 mb-4 group-hover:text-gray-600 transition-colors">IVA ESCLUSA</p>
               <div className="bg-gradient-to-r from-red-600 to-red-700 text-white px-4 py-2 rounded-lg mb-6 inline-block shadow-md group-hover:shadow-lg transition-shadow">
-                <p className="font-bold">🔥 PROMO!</p>
+                <p className="font-bold"> PROMO!</p>
               </div>
             </div>
             
@@ -111,33 +111,33 @@ export default function PricingSection() {
                 className="w-full hover:shadow-xl hover:shadow-red-500/30 transition-all duration-300 transform hover:scale-105"
                 onClick={() => window.open('https://tinyurl.com/FDDLPO', '_blank')}
               >
-                ACQUISTA ORA 🚀
+                ACQUISTA ORA 
               </Button>
             </motion.div>
           </motion.div>
 
           {/* Card 3 - Clienti */}
           <motion.div 
-            className="bg-gradient-to-br from-white to-blue-50 p-8 rounded-xl shadow-lg border border-blue-200 relative h-[400px] flex flex-col justify-between group hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-2"
+            className="bg-gradient-to-br from-white to-yellow-50 p-8 rounded-xl shadow-lg border border-yellow-200 relative h-[400px] flex flex-col justify-between group hover:shadow-2xl hover:shadow-yellow-500/20 transition-all duration-300 hover:-translate-y-2"
             variants={fadeInUp}
             whileHover={{ scale: 1.02 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-yellow-100/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
             
             <div className="relative z-10">
-              <h3 className="text-4xl font-bold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">€149,00</h3>
+              <h3 className="text-4xl font-bold text-gray-900 mb-2 group-hover:text-yellow-700 transition-colors">€149,00</h3>
               <p className="text-sm text-gray-500 mb-4 group-hover:text-gray-600 transition-colors">IVA ESCLUSA</p>
-              <div className="bg-gradient-to-r from-blue-100 to-blue-200 p-3 rounded-lg mb-6 border border-blue-300 group-hover:shadow-md transition-shadow">
-                <p className="text-blue-700 font-bold group-hover:text-blue-800 transition-colors">CLIENTI</p>
+              <div className="bg-gradient-to-r from-yellow-600 to-yellow-700 text-white px-4 py-2 rounded-lg mb-6 inline-block shadow-md group-hover:shadow-lg transition-shadow">
+                <p className="font-bold">CLIENTI</p>
               </div>
             </div>
             
             <div className="relative z-10">
-              <div className="bg-gradient-to-br from-gray-50 to-white p-4 rounded-lg mb-6 border shadow-inner group-hover:shadow-lg transition-shadow">
+              <div className="mb-6 flex justify-center">
                 <img 
                   src="https://res.cloudinary.com/dufcnrcfe/image/upload/v1756909375/Untitled_design_68_g7giyj.png" 
                   alt="Tutela Impresa Logo" 
-                  className="h-12 object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                  className="h-20 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg filter drop-shadow-[0_4px_8px_rgba(0,0,0,0.1)]"
                   onError={(e) => {
                     e.currentTarget.src = tutelaImpresaLogo;
                   }}
@@ -145,9 +145,9 @@ export default function PricingSection() {
               </div>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <Button 
-                  variant="default" 
+                  variant="yellow" 
                   size="lg" 
-                  className="w-full hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 transform hover:scale-105"
+                  className="w-full hover:shadow-xl hover:shadow-yellow-500/30 transition-all duration-300 transform hover:scale-105"
                   onClick={() => window.open('https://tinyurl.com/FDDLNR', '_blank')}
                 >
                   ACQUISTA ORA
@@ -169,26 +169,28 @@ export default function PricingSection() {
               <h3 className="text-4xl font-bold mb-2 group-hover:text-yellow-100 transition-colors">€99,00</h3>
               <p className="text-sm mb-4 opacity-90 group-hover:opacity-100 transition-opacity">IVA ESCLUSA</p>
               <div className="bg-white/20 backdrop-blur-sm p-3 rounded-lg mb-6 border border-white/30 group-hover:bg-white/30 transition-colors">
-                <p className="font-bold group-hover:text-yellow-100 transition-colors">💎 CLIENTI</p>
+                <p className="font-bold group-hover:text-yellow-100 transition-colors">CLIENTI</p>
               </div>
-              
             </div>
             
             <div className="relative z-10">
-             <div className="bg-white p-4 rounded-lg mb-6 border border-red-200 shadow-md group-hover:shadow-lg transition-all">
-  <img 
-    src="/lovable-uploads/719d571a-1a2d-4a38-9d88-a850b42f2d80.png" 
-    alt="Ferrari Service Logo" 
-    className="h-10 object-contain mx-auto group-hover:scale-105 transition-transform duration-300"
-  />
-</div>
+              <div className="mb-6 flex justify-center">
+                <img 
+                  src="/lovable-uploads/719d571a-1a2d-4a38-9d88-a850b42f2d80.png" 
+                  alt="Tutela Impresa Logo" 
+                  className="h-20 object-contain group-hover:scale-110 transition-transform duration-300 filter brightness-0 invert drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] group-hover:drop-shadow-[0_0_16px_rgba(255,255,255,1)]"
+                  onError={(e) => {
+                    e.currentTarget.src = tutelaImpresaLogo;
+                  }}
+                />
+              </div>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <Button 
                   size="lg" 
                   className="w-full bg-white text-red-600 hover:bg-yellow-100 hover:text-red-700 hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   onClick={() => window.open('https://tinyurl.com/FDDLTI', '_blank')}
                 >
-                  ACQUISTA ORA 👑
+                  ACQUISTA ORA 
                 </Button>
               </motion.div>
             </div>

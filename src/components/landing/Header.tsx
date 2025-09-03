@@ -39,7 +39,7 @@ export default function Header({ isScrolled }: HeaderProps) {
 
           </motion.div>
           <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-            <a href="https://tinyurl.com/FDDLNR" target="_blank" rel="noopener noreferrer">
+            <a href="https://tinyurl.com/FDDLPO" target="_blank" rel="noopener noreferrer">
             <Button variant="yellow" size="sm" className="hover:shadow-lg transition-all duration-300">
               ACQUISTA ORA
             </Button>
@@ -50,7 +50,7 @@ export default function Header({ isScrolled }: HeaderProps) {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <a href="https://tinyurl.com/FDDLNR" target="_blank" rel="noopener noreferrer">
+            <a href="https://tinyurl.com/FDDLPO" target="_blank" rel="noopener noreferrer">
             <Button variant="yellow" size="sm" className="text-xs px-3">
               ACQUISTA
             </Button>
